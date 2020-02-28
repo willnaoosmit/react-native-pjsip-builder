@@ -80,7 +80,7 @@ RUN cd /sources/android_sdk/tools && \
 # Download Pjsip
 RUN cd /sources/pjsip && \
     curl -L -# -o pjsip.tar.gz "$PJSIP_DOWNLOAD_URL" && \
-    tar xjf pjsip.tar.gz && \
+    tar xvf pjsip.tar.gz && \
     rm -rf pjsip.tar.gz && \
     mv pjproject-*/* ./
 
